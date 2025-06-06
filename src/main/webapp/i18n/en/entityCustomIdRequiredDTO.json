@@ -1,0 +1,27 @@
+{
+  "jhipsterVueApp": {
+    "entityCustomIdRequiredDTO": {
+      "home": {
+        "title": "Entity Custom Id Required DTOS",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Entity Custom Id Required DTO",
+        "createOrEditLabel": "Create or edit a Entity Custom Id Required DTO",
+        "notFound": "No Entity Custom Id Required DTOS found"
+      },
+      "created": "A new Entity Custom Id Required DTO is created with identifier { param }",
+      "updated": "A Entity Custom Id Required DTO is updated with identifier { param }",
+      "deleted": "A Entity Custom Id Required DTO is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Entity Custom Id Required DTO { id }?"
+      },
+      "detail": {
+        "title": "Entity Custom Id Required DTO"
+      },
+      "customId": "Custom Id",
+      "entityCustomIdRequiredDTOMapsId": "Entity Custom Id Required DTO Maps Id",
+      "oneToOneBack": "One To One Back",
+      "manyToOneBack": "Many To One Back",
+      "manyToManyBack": "Many To Many Back"
+    }
+  }
+}

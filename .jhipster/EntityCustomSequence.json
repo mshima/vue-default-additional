@@ -1,0 +1,22 @@
+{
+  "annotations": {
+    "changelogDate": 20200805000200
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long",
+      "options": {
+        "sequenceGeneratorName": "entityIntegerIdSeq"
+      }
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "name": "EntityCustomSequence",
+  "relationships": [],
+  "searchEngine": "no"
+}

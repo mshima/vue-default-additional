@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <!--
+        Added the constraints for entity EntityUuidIdDTOMapsId.
+    -->
+    <changeSet id="20200805000401-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="id"
+                                 baseTableName="entity_uuid_id_dto_maps_id"
+                                 constraintName="fk_entity_uuid_id_dto_maps_id__entity_uuid_iddto_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="entity_uuid_id_dto"
+                                 />
+    </changeSet>
+</databaseChangeLog>

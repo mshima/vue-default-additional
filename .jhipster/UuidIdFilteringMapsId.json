@@ -1,0 +1,44 @@
+{
+  "annotations": {
+    "changelogDate": 20200805000701
+  },
+  "applications": "*",
+  "fields": [],
+  "jpaMetamodelFiltering": true,
+  "name": "UuidIdFilteringMapsId",
+  "relationships": [
+    {
+      "options": {
+        "id": true
+      },
+      "otherEntityName": "uuidIdFiltering",
+      "otherEntityRelationshipName": "uuidIdFilteringMapsId",
+      "relationshipName": "uuidIdFiltering",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "uuidIdFilteringRelationship",
+      "otherEntityRelationshipName": "oneToOneMapsId",
+      "relationshipName": "oneToOneMapsIdBack",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "uuidIdFilteringRelationship",
+      "otherEntityRelationshipName": "manyToOneMapsId",
+      "relationshipName": "manyToOneMapsIdBack",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "uuidIdFilteringRelationship",
+      "otherEntityRelationshipName": "manyToManyMapsId",
+      "relationshipName": "manyToManyMapsIdBack",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

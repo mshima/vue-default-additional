@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <!--
+        Added the constraints for entity EntityCustomIdRelationship.
+    -->
+    <changeSet id="20200805000502-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="one_to_one_custom_id"
+                                 baseTableName="entity_custom_id_relationship"
+                                 constraintName="fk_entity_custom_id_relationship__one_to_one_id"
+                                 referencedColumnNames="custom_id"
+                                 referencedTableName="entity_custom_id"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="one_to_one_maps_id_custom_id"
+                                 baseTableName="entity_custom_id_relationship"
+                                 constraintName="fk_entity_custom_id_relationship__one_to_one_maps_id_id"
+                                 referencedColumnNames="custom_id"
+                                 referencedTableName="entity_custom_id_maps_id"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="many_to_one_custom_id"
+                                 baseTableName="entity_custom_id_relationship"
+                                 constraintName="fk_entity_custom_id_relationship__many_to_one_id"
+                                 referencedColumnNames="custom_id"
+                                 referencedTableName="entity_custom_id"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="many_to_one_maps_id_custom_id"
+                                 baseTableName="entity_custom_id_relationship"
+                                 constraintName="fk_entity_custom_id_relationship__many_to_one_maps_id_id"
+                                 referencedColumnNames="custom_id"
+                                 referencedTableName="entity_custom_id_maps_id"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="entity_custom_id_relationship_related_id"
+                                 baseTableName="rel_entity_custom_id_relationship__many_to_many"
+                                 constraintName="fk_rel_entity_custom_id_relatio__entity_custom_id_relatio_e8_id"
+                                 referencedColumnNames="related_id"
+                                 referencedTableName="entity_custom_id_relationship"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="many_to_many_custom_id"
+                                 baseTableName="rel_entity_custom_id_relationship__many_to_many"
+                                 constraintName="fk_rel_entity_custom_id_relatio__many_to_many_be_id"
+                                 referencedColumnNames="custom_id"
+                                 referencedTableName="entity_custom_id"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="entity_custom_id_relationship_related_id"
+                                 baseTableName="rel_entity_custom_id_relationship__many_to_many_maps_id"
+                                 constraintName="fk_rel_entity_custom_id_relatio__entity_custom_id_relatio_1b_id"
+                                 referencedColumnNames="related_id"
+                                 referencedTableName="entity_custom_id_relationship"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="many_to_many_maps_id_custom_id"
+                                 baseTableName="rel_entity_custom_id_relationship__many_to_many_maps_id"
+                                 constraintName="fk_rel_entity_custom_id_relatio__many_to_many_maps_id_85_id"
+                                 referencedColumnNames="custom_id"
+                                 referencedTableName="entity_custom_id_maps_id"
+                                 />
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,45 @@
+{
+  "annotations": {
+    "changelogDate": 20200805000601
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "entityTableName": "entity_custom_id_dto_maps_id",
+  "fields": [],
+  "name": "EntityCustomIdDTOMapsId",
+  "relationships": [
+    {
+      "options": {
+        "id": true
+      },
+      "otherEntityName": "entityCustomIdDTO",
+      "otherEntityRelationshipName": "entityCustomIdDTOMapsId",
+      "relationshipName": "entityCustomIdDTO",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "entityCustomIdDTORel",
+      "otherEntityRelationshipName": "oneToOneMapsId",
+      "relationshipName": "oneToOneMapsIdBack",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "entityCustomIdDTORel",
+      "otherEntityRelationshipName": "manyToOneMapsId",
+      "relationshipName": "manyToOneMapsIdBack",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "entityCustomIdDTORel",
+      "otherEntityRelationshipName": "manyToManyMapsId",
+      "relationshipName": "manyToManyMapsIdBack",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

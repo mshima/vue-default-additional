@@ -1,0 +1,27 @@
+{
+  "jhipsterVueApp": {
+    "entityUuidId": {
+      "home": {
+        "title": "Entity Uuid Ids",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Entity Uuid Id",
+        "createOrEditLabel": "Create or edit a Entity Uuid Id",
+        "notFound": "No Entity Uuid Ids found"
+      },
+      "created": "A new Entity Uuid Id is created with identifier { param }",
+      "updated": "A Entity Uuid Id is updated with identifier { param }",
+      "deleted": "A Entity Uuid Id is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Entity Uuid Id { id }?"
+      },
+      "detail": {
+        "title": "Entity Uuid Id"
+      },
+      "id": "Id",
+      "entityUuidIdMapsId": "Entity Uuid Id Maps Id",
+      "oneToOneBack": "One To One Back",
+      "manyToOneBack": "Many To One Back",
+      "manyToManyBack": "Many To Many Back"
+    }
+  }
+}

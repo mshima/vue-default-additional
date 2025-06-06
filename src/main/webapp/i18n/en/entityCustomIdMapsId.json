@@ -1,0 +1,27 @@
+{
+  "jhipsterVueApp": {
+    "entityCustomIdMapsId": {
+      "home": {
+        "title": "Entity Custom Id Maps Ids",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Entity Custom Id Maps Id",
+        "createOrEditLabel": "Create or edit a Entity Custom Id Maps Id",
+        "notFound": "No Entity Custom Id Maps Ids found"
+      },
+      "created": "A new Entity Custom Id Maps Id is created with identifier { param }",
+      "updated": "A Entity Custom Id Maps Id is updated with identifier { param }",
+      "deleted": "A Entity Custom Id Maps Id is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Entity Custom Id Maps Id { id }?"
+      },
+      "detail": {
+        "title": "Entity Custom Id Maps Id"
+      },
+      "customId": "Custom Id",
+      "entityCustomId": "Entity Custom Id",
+      "oneToOneMapsIdBack": "One To One Maps Id Back",
+      "manyToOneMapsIdBack": "Many To One Maps Id Back",
+      "manyToManyMapsIdBack": "Many To Many Maps Id Back"
+    }
+  }
+}

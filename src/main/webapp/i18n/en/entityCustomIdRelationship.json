@@ -1,0 +1,29 @@
+{
+  "jhipsterVueApp": {
+    "entityCustomIdRelationship": {
+      "home": {
+        "title": "Entity Custom Id Relationships",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Entity Custom Id Relationship",
+        "createOrEditLabel": "Create or edit a Entity Custom Id Relationship",
+        "notFound": "No Entity Custom Id Relationships found"
+      },
+      "created": "A new Entity Custom Id Relationship is created with identifier { param }",
+      "updated": "A Entity Custom Id Relationship is updated with identifier { param }",
+      "deleted": "A Entity Custom Id Relationship is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Entity Custom Id Relationship { id }?"
+      },
+      "detail": {
+        "title": "Entity Custom Id Relationship"
+      },
+      "relatedId": "Related Id",
+      "oneToOne": "One To One",
+      "oneToOneMapsId": "One To One Maps Id",
+      "manyToOne": "Many To One",
+      "manyToOneMapsId": "Many To One Maps Id",
+      "manyToMany": "Many To Many",
+      "manyToManyMapsId": "Many To Many Maps Id"
+    }
+  }
+}

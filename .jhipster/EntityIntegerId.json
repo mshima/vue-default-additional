@@ -1,0 +1,19 @@
+{
+  "annotations": {
+    "changelogDate": 20200805000100
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "name": "EntityIntegerId",
+  "relationships": [],
+  "searchEngine": "no"
+}

@@ -1,0 +1,24 @@
+{
+  "jhipsterVueApp": {
+    "entityCustomSequence": {
+      "home": {
+        "title": "Entity Custom Sequences",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Entity Custom Sequence",
+        "createOrEditLabel": "Create or edit a Entity Custom Sequence",
+        "notFound": "No Entity Custom Sequences found"
+      },
+      "created": "A new Entity Custom Sequence is created with identifier { param }",
+      "updated": "A Entity Custom Sequence is updated with identifier { param }",
+      "deleted": "A Entity Custom Sequence is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Entity Custom Sequence { id }?"
+      },
+      "detail": {
+        "title": "Entity Custom Sequence"
+      },
+      "id": "Id",
+      "name": "Name"
+    }
+  }
+}

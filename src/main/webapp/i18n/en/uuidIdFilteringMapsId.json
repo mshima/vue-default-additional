@@ -1,0 +1,27 @@
+{
+  "jhipsterVueApp": {
+    "uuidIdFilteringMapsId": {
+      "home": {
+        "title": "Uuid Id Filtering Maps Ids",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Uuid Id Filtering Maps Id",
+        "createOrEditLabel": "Create or edit a Uuid Id Filtering Maps Id",
+        "notFound": "No Uuid Id Filtering Maps Ids found"
+      },
+      "created": "A new Uuid Id Filtering Maps Id is created with identifier { param }",
+      "updated": "A Uuid Id Filtering Maps Id is updated with identifier { param }",
+      "deleted": "A Uuid Id Filtering Maps Id is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Uuid Id Filtering Maps Id { id }?"
+      },
+      "detail": {
+        "title": "Uuid Id Filtering Maps Id"
+      },
+      "customId": "Custom Id",
+      "uuidIdFiltering": "Uuid Id Filtering",
+      "oneToOneMapsIdBack": "One To One Maps Id Back",
+      "manyToOneMapsIdBack": "Many To One Maps Id Back",
+      "manyToManyMapsIdBack": "Many To Many Maps Id Back"
+    }
+  }
+}

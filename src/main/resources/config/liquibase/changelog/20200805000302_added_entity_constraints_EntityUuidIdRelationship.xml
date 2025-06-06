@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <!--
+        Added the constraints for entity EntityUuidIdRelationship.
+    -->
+    <changeSet id="20200805000302-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="one_to_one_id"
+                                 baseTableName="entity_uuid_id_relationship"
+                                 constraintName="fk_entity_uuid_id_relationship__one_to_one_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="entity_uuid_id"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="one_to_one_maps_id_id"
+                                 baseTableName="entity_uuid_id_relationship"
+                                 constraintName="fk_entity_uuid_id_relationship__one_to_one_maps_id_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="entity_uuid_id_maps_id"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="many_to_one_id"
+                                 baseTableName="entity_uuid_id_relationship"
+                                 constraintName="fk_entity_uuid_id_relationship__many_to_one_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="entity_uuid_id"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="many_to_one_maps_id_id"
+                                 baseTableName="entity_uuid_id_relationship"
+                                 constraintName="fk_entity_uuid_id_relationship__many_to_one_maps_id_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="entity_uuid_id_maps_id"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="entity_uuid_id_relationship_id"
+                                 baseTableName="rel_entity_uuid_id_relationship__many_to_many"
+                                 constraintName="fk_rel_entity_uuid_id_relations__entity_uuid_id_relations_2e_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="entity_uuid_id_relationship"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="many_to_many_id"
+                                 baseTableName="rel_entity_uuid_id_relationship__many_to_many"
+                                 constraintName="fk_rel_entity_uuid_id_relations__many_to_many_7e_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="entity_uuid_id"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="entity_uuid_id_relationship_id"
+                                 baseTableName="rel_entity_uuid_id_relationship__many_to_many_maps_id"
+                                 constraintName="fk_rel_entity_uuid_id_relations__entity_uuid_id_relations_9b_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="entity_uuid_id_relationship"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="many_to_many_maps_id_id"
+                                 baseTableName="rel_entity_uuid_id_relationship__many_to_many_maps_id"
+                                 constraintName="fk_rel_entity_uuid_id_relations__many_to_many_maps_id_eb_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="entity_uuid_id_maps_id"
+                                 />
+    </changeSet>
+</databaseChangeLog>

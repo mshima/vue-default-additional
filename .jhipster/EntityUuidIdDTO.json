@@ -1,0 +1,47 @@
+{
+  "annotations": {
+    "changelogDate": 20200805000400
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "entityTableName": "entity_uuid_id_dto",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "UUID"
+    }
+  ],
+  "name": "EntityUuidIdDTO",
+  "relationships": [
+    {
+      "otherEntityName": "entityUuidIdDTOMapsId",
+      "otherEntityRelationshipName": "entityUuidIdDTO",
+      "relationshipName": "entityUuidIdDTOMapsId",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "entityUuidIdDTORel",
+      "otherEntityRelationshipName": "oneToOne",
+      "relationshipName": "oneToOneBack",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "entityUuidIdDTORel",
+      "otherEntityRelationshipName": "manyToOne",
+      "relationshipName": "manyToOneBack",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "entityUuidIdDTORel",
+      "otherEntityRelationshipName": "manyToMany",
+      "relationshipName": "manyToManyBack",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

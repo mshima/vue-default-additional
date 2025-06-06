@@ -1,0 +1,29 @@
+{
+  "jhipsterVueApp": {
+    "uuidIdFilteringRelationship": {
+      "home": {
+        "title": "Uuid Id Filtering Relationships",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Uuid Id Filtering Relationship",
+        "createOrEditLabel": "Create or edit a Uuid Id Filtering Relationship",
+        "notFound": "No Uuid Id Filtering Relationships found"
+      },
+      "created": "A new Uuid Id Filtering Relationship is created with identifier { param }",
+      "updated": "A Uuid Id Filtering Relationship is updated with identifier { param }",
+      "deleted": "A Uuid Id Filtering Relationship is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Uuid Id Filtering Relationship { id }?"
+      },
+      "detail": {
+        "title": "Uuid Id Filtering Relationship"
+      },
+      "relatedId": "Related Id",
+      "oneToOne": "One To One",
+      "oneToOneMapsId": "One To One Maps Id",
+      "manyToOne": "Many To One",
+      "manyToOneMapsId": "Many To One Maps Id",
+      "manyToMany": "Many To Many",
+      "manyToManyMapsId": "Many To Many Maps Id"
+    }
+  }
+}

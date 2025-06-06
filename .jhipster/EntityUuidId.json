@@ -1,0 +1,44 @@
+{
+  "annotations": {
+    "changelogDate": 20200805000300
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "UUID"
+    }
+  ],
+  "name": "EntityUuidId",
+  "relationships": [
+    {
+      "otherEntityName": "entityUuidIdMapsId",
+      "otherEntityRelationshipName": "entityUuidId",
+      "relationshipName": "entityUuidIdMapsId",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "entityUuidIdRelationship",
+      "otherEntityRelationshipName": "oneToOne",
+      "relationshipName": "oneToOneBack",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "entityUuidIdRelationship",
+      "otherEntityRelationshipName": "manyToOne",
+      "relationshipName": "manyToOneBack",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "entityUuidIdRelationship",
+      "otherEntityRelationshipName": "manyToMany",
+      "relationshipName": "manyToManyBack",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

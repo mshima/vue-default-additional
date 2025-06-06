@@ -1,0 +1,27 @@
+{
+  "jhipsterVueApp": {
+    "entityUuidIdDTO": {
+      "home": {
+        "title": "Entity Uuid Id DTOS",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Entity Uuid Id DTO",
+        "createOrEditLabel": "Create or edit a Entity Uuid Id DTO",
+        "notFound": "No Entity Uuid Id DTOS found"
+      },
+      "created": "A new Entity Uuid Id DTO is created with identifier { param }",
+      "updated": "A Entity Uuid Id DTO is updated with identifier { param }",
+      "deleted": "A Entity Uuid Id DTO is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Entity Uuid Id DTO { id }?"
+      },
+      "detail": {
+        "title": "Entity Uuid Id DTO"
+      },
+      "id": "Id",
+      "entityUuidIdDTOMapsId": "Entity Uuid Id DTO Maps Id",
+      "oneToOneBack": "One To One Back",
+      "manyToOneBack": "Many To One Back",
+      "manyToManyBack": "Many To Many Back"
+    }
+  }
+}

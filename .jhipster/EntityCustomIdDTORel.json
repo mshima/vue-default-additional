@@ -1,0 +1,64 @@
+{
+  "annotations": {
+    "changelogDate": 20200805000602
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "entityTableName": "entity_custom_id_dto_rel",
+  "fields": [
+    {
+      "fieldName": "relatedId",
+      "fieldType": "Long",
+      "options": {
+        "id": true
+      }
+    }
+  ],
+  "name": "EntityCustomIdDTORel",
+  "relationships": [
+    {
+      "otherEntityName": "entityCustomIdDTO",
+      "otherEntityRelationshipName": "oneToOneBack",
+      "relationshipName": "oneToOne",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "entityCustomIdDTOMapsId",
+      "otherEntityRelationshipName": "oneToOneMapsIdBack",
+      "relationshipName": "oneToOneMapsId",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "entityCustomIdDTO",
+      "otherEntityRelationshipName": "manyToOneBack",
+      "relationshipName": "manyToOne",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "entityCustomIdDTOMapsId",
+      "otherEntityRelationshipName": "manyToOneMapsIdBack",
+      "relationshipName": "manyToOneMapsId",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "entityCustomIdDTO",
+      "otherEntityRelationshipName": "manyToManyBack",
+      "relationshipName": "manyToMany",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "entityCustomIdDTOMapsId",
+      "otherEntityRelationshipName": "manyToManyMapsIdBack",
+      "relationshipName": "manyToManyMapsId",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

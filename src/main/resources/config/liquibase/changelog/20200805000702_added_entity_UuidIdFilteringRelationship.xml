@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <!--
+        Added the entity UuidIdFilteringRelationship.
+    -->
+    <changeSet id="20200805000702-1" author="jhipster">
+        <createTable tableName="uuid_id_filtering_relationship">
+            <column name="related_id" type="${uuidType}">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="one_to_one_custom_id" type="${uuidType}">
+                <constraints nullable="true" unique="true" uniqueConstraintName="ux_uuid_id_filtering_relationship__one_to_one_custom_id" />
+            </column>
+            <column name="one_to_one_maps_id_custom_id" type="${uuidType}">
+                <constraints nullable="true" unique="true" uniqueConstraintName="ux_uuid_id_filtering_relationship__one_to_one_maps_id_custom_id" />
+            </column>
+            <column name="many_to_one_custom_id" type="${uuidType}">
+                <constraints nullable="true" />
+            </column>
+            <column name="many_to_one_maps_id_custom_id" type="${uuidType}">
+                <constraints nullable="true" />
+            </column>
+            <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
+        </createTable>
+    </changeSet>
+
+    <changeSet id="20200805000702-1-relations" author="jhipster">
+
+        <createTable tableName="rel_uuid_id_filtering_relationship__many_to_many">
+            <column name="many_to_many_custom_id" type="${uuidType}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uuid_id_filtering_relationship_related_id" type="${uuidType}">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addPrimaryKey columnNames="uuid_id_filtering_relationship_related_id, many_to_many_custom_id" tableName="rel_uuid_id_filtering_relationship__many_to_many"/>
+
+        <createTable tableName="rel_uuid_id_filtering_relationship__many_to_many_maps_id">
+            <column name="many_to_many_maps_id_custom_id" type="${uuidType}">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uuid_id_filtering_relationship_related_id" type="${uuidType}">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <addPrimaryKey columnNames="uuid_id_filtering_relationship_related_id, many_to_many_maps_id_custom_id" tableName="rel_uuid_id_filtering_relationship__many_to_many_maps_id"/>
+    </changeSet>
+
+    <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
+
+    <!--
+        Load sample data generated with Faker.js
+        - This data can be easily edited using a CSV editor (or even MS Excel) and
+          is located in the 'src/main/resources/config/liquibase/fake-data' directory
+        - By default this data is applied when running with the JHipster 'dev' profile.
+          This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
+          Spring Boot configuration key.
+    -->
+    <changeSet id="20200805000702-1-data" author="jhipster" context="faker">
+        <loadData
+                  file="config/liquibase/fake-data/uuid_id_filtering_relationship.csv"
+                  separator=";"
+                  tableName="uuid_id_filtering_relationship"
+                  usePreparedStatements="true">
+            <column name="related_id" type="${uuidType}"/>
+            <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
+        </loadData>
+    </changeSet>
+</databaseChangeLog>

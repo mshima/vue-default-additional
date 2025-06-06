@@ -1,0 +1,24 @@
+{
+  "jhipsterVueApp": {
+    "entityIntegerId": {
+      "home": {
+        "title": "Entity Integer Ids",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Entity Integer Id",
+        "createOrEditLabel": "Create or edit a Entity Integer Id",
+        "notFound": "No Entity Integer Ids found"
+      },
+      "created": "A new Entity Integer Id is created with identifier { param }",
+      "updated": "A Entity Integer Id is updated with identifier { param }",
+      "deleted": "A Entity Integer Id is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Entity Integer Id { id }?"
+      },
+      "detail": {
+        "title": "Entity Integer Id"
+      },
+      "id": "Id",
+      "name": "Name"
+    }
+  }
+}

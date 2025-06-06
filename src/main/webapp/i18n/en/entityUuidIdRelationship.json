@@ -1,0 +1,29 @@
+{
+  "jhipsterVueApp": {
+    "entityUuidIdRelationship": {
+      "home": {
+        "title": "Entity Uuid Id Relationships",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Entity Uuid Id Relationship",
+        "createOrEditLabel": "Create or edit a Entity Uuid Id Relationship",
+        "notFound": "No Entity Uuid Id Relationships found"
+      },
+      "created": "A new Entity Uuid Id Relationship is created with identifier { param }",
+      "updated": "A Entity Uuid Id Relationship is updated with identifier { param }",
+      "deleted": "A Entity Uuid Id Relationship is deleted with identifier { param }",
+      "delete": {
+        "question": "Are you sure you want to delete Entity Uuid Id Relationship { id }?"
+      },
+      "detail": {
+        "title": "Entity Uuid Id Relationship"
+      },
+      "id": "Id",
+      "oneToOne": "One To One",
+      "oneToOneMapsId": "One To One Maps Id",
+      "manyToOne": "Many To One",
+      "manyToOneMapsId": "Many To One Maps Id",
+      "manyToMany": "Many To Many",
+      "manyToManyMapsId": "Many To Many Maps Id"
+    }
+  }
+}
