@@ -30,7 +30,7 @@
         </tbody>
       </table>
     </div>
-    <b-modal ref="healthModal" okOnly>
+    <b-modal ref="healthModal" ok-only>
       <template #title>
         <h4 v-if="currentHealth" class="modal-title" id="showHealthLabel">
           <span v-text="t$('health.indicator.' + baseName(currentHealth.name))" />
