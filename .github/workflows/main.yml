@@ -38,4 +38,6 @@ jobs:
         if: always() && steps.e2e.outcome == 'failure'
         with:
           name: cypress-screenshots
-          path: ${{ github.workspace }}/**/cypress/screenshots
+          path: |
+            ${{ github.workspace }}/**/cypress/screenshots
+            ${{ github.workspace }}/**/cypress/videos

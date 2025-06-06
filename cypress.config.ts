@@ -1,7 +1,8 @@
 import { defineConfig } from 'cypress';
 
 export default defineConfig({
-  video: false,
+  video: true,
+  videoCompression: true,
   fixturesFolder: 'src/test/javascript/cypress/fixtures',
   screenshotsFolder: 'target/cypress/screenshots',
   downloadsFolder: 'target/cypress/downloads',
