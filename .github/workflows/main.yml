@@ -25,6 +25,7 @@ jobs:
       - name: 'E2E: Prepare'
         run: npm run ci:e2e:prepare
       - name: 'E2E: Run'
+        id: e2e
         run: npm run ci:e2e:run
         env:
           CYPRESS_ENABLE_RECORD: false
@@ -32,3 +33,9 @@ jobs:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
       - name: 'E2E: Teardown'
         run: npm run ci:e2e:teardown
+      - name: 'E2E: Store failure screenshots'
+        uses: actions/upload-artifact@v4
+        if: always() && steps.e2e.outcome == 'failure'
+        with:
+          name: cypress-screenshots
+          path: ${{ github.workspace }}/**/cypress/screenshots
