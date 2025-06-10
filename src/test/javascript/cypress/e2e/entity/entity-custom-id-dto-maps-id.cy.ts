@@ -78,7 +78,7 @@ describe('EntityCustomIdDTOMapsId e2e test', () => {
 
   it('EntityCustomIdDTOMapsIds menu should load EntityCustomIdDTOMapsIds page', () => {
     cy.visit('/');
-    cy.wait(400);
+    cy.wait(1000);
     cy.clickOnEntityMenuItem('entity-custom-id-dto-maps-id');
     cy.wait('@entitiesRequest').then(({ response }) => {
       if (response?.body.length === 0) {
