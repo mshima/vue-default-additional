@@ -9,7 +9,7 @@ export default defineConfig({
   videosFolder: 'target/cypress/videos',
   chromeWebSecurity: true,
   viewportWidth: 1200,
-  viewportHeight: 720,
+  viewportHeight: 800,
   retries: 2,
   env: {
     authenticationUrl: '/api/authenticate',
